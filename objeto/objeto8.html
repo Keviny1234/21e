@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p>Se você acessar um método de objeto sem (), ele retornará a definição da função:</p>
+
+<p id="demo"></p>
+
+<script>
+// Crie um objeto:
+const person = {
+  firstName: "joão",
+  lastName : "batista",
+  id     : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+// Exibir dados do objeto:
+document.getElementById("demo").innerHTML = person.fullName;
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
