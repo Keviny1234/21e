@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p>Existem duas maneiras diferentes de acessar uma propriedade de objeto.</p>
+
+<p>Você pode usar person.property ou person["property"].</p>
+
+<p id="demo"></p>
+
+<script>
+// Crie um objeto:
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     :  5566
+};
+
+// Exiba alguns dados do objeto:
+document.getElementById("demo").innerHTML =
+person["firstName"] + " " + person["lastName"];
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>Calcule uma nova matriz com o nome completo de cada pessoa na matriz antiga:</p>
+
+<p id="demo"></p>
+
+<script>
+const persons = [
+  {firstname : "Maria", lastname: "Ramos"},
+  {firstname : "Kayla", lastname: "Ferreira"},
+  {firstname : "Jayny", lastname: "Costa"}
+];
+
+document.getElementById("demo").innerHTML = persons.map(getFullName);
+
+function getFullName(item) {
+  return [item.firstname,item.lastname].join(" ");
+}
+</script>
+
+</body>
+</html>

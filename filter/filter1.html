@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arrays</h1>
+<h2>The filter() Method</h2>
+
+<p>Obtenha cada elemento na matriz que tenha um valor de 18 ou mais:</p>
+
+<p id="demo"></p>
+
+<script>
+const ages = [3, 33, 7, 25];
+
+document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+
+function checkAdult(age) {
+  return age >= 18;
+}
+</script>
+
+</body>
+</html>
